@@ -140,8 +140,8 @@ margin-top: -16px;
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin:10vh auto ;
+    /* margin-bottom: 50px; */
     width: 710px;
     min-height: 450px;
     padding-left: 12px;

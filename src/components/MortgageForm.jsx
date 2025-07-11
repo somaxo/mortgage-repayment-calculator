@@ -4,6 +4,7 @@ import ResultCard from "../components/ResultCard";
 import ResetButton from "../components/ResetButton";
 import CalculatedResult from "./CalculatedResult";
 
+
 const MortgageForm = () => {
   const [amount, setAmount] = useState("");
   const [term, setTerm] = useState("");
@@ -326,7 +327,7 @@ const MortgageForm = () => {
           <Button />
         </div>
         {/* Desktop result card(s) */}
-        <div className="hidden md:block">
+        <div className="hidden md:block ">
           {showResult ? <CalculatedResult result={result} /> : <ResultCard />}
         </div>
       </form>
