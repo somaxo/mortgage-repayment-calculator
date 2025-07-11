@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form{
+    margin: 12px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.heading{
+  margin:1em 0;
+}
+
+.reset-btn{
+  margin: 0.5em 0 0 0;
+}
+
+
+.title{
+  color: hsl(200,26%,54%);
+  font-size: small;
+  font-weight:500;
+  margin: 0.6em 0;
+}
+.title-mt-ir label{
+  color: hsl(200,26%,54%);
+  font-size: small;
+  font-weight:500;
+  display: flex;
+ margin-bottom: 0.6em;
+}
+
+.input-field{
+  margin-bottom: 1em;
+}
+
+span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.mortgage-type{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 1em;
+  gap: 0.8em;
+  font-size: small;
+  font-weight: 600;
+}
+
+button{
+  margin: 0.5em 0 1.3em 0;
+}
+/* Hide number input spinners (Chrome, Safari, Edge) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input spinners (Firefox) */
+input[type=number] {
+  appearance: textfield;        /* Standard */
+  -moz-appearance: textfield;
+}
+
+.mortgage-amount {
+  padding-left: 55px;
+}
+
+input{
+  padding-left: 10px;
+  
+}
+
+
+.result-box, .calc-result{
+  /* margin: 12px 12px 0 12px; */
+  padding: 15px 12px;
+}
+
+.result-box p {
+  /* font-size: 15px; */
+  margin: 1em 0;
+}
+
+/* Calculated Mortgage result card css */
+.calc-result-sub-p{
+  margin: 0.5rem 0;
+}
+
+hr{
+color: hsl(200, 24%, 40%);
+margin: 1.3rem 0;
+}
+
+.small-calc-result{
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.small-calc-result-text{
+  margin-bottom: 5px;
+}
+
+/* error messagees mobile and desktop */
+.term-error, .rate-error{
+  margin-top: -15px;
+}
+
+.type-error{
+  margin-top: -13px;
+  margin-bottom: 15px;
+}
+
+.desktop-term-error, .desktop-rate-error{
+margin-top: -16px;
+}
+
+
+
+/* Responsive Screens */
+
+@media (min-width: 768px) {
+  
+  body{
+    background-color:hsl(202,86%,94%);
+  }
+
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 710px;
+    min-height: 450px;
+    padding-left: 12px;
+  }
+
+  .form-content{
+    width: 45rem;
+  }
+  
+  .reset-btn{
+    margin-left: 100px;
+  }
+
+  .result-box img{
+  margin-top: 40px;
+  }
+
+
+
+  /* Calculated Mortgage result card css */
+
+.calc-result{
+    width: 22rem;
+    padding: 0 2rem;
+  }
+
+hr{
+margin: 1.2rem 0;
+}
+
+
+  
+}
+
+@media (min-width: 1024px) {
+
+  form{
+    width: 850px;
+  }
+  
+  .reset-btn{
+    margin-left: 140px;
+  }
+
+  .result-box img{
+  margin-top: 50px;
+  }
+
+ /* Calculated Mortgage result card css */
+
+  .calc-result{
+    width: 26.5rem;
+  
+  }
+}
